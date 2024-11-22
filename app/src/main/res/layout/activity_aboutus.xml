@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".Aboutus">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- App Title -->
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_uas_nmims"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- App Description -->
+            <TextView
+                android:id="@+id/app_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/easify_work_processes_and_embrace_a_paperless_environment_built_to_simplify_and_enhance_efficiency_at_nmims"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="16dp" />
+
+            <!-- Card for Harsh -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_harsh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#E8F5E9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/harsh_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="Harsh Jain's Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/harsh_profile" />
+
+                    <TextView
+                        android:id="@+id/harsh_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harsh_jain"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/btn_linkedin_harsh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_linkedin"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/dark_blue"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Kapil -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_kapil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#E3F2FD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/kapil_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/kapil_profile"
+                        android:contentDescription="Kapil Agrawal's Image"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/kapil_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kapil_agrawal"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/btn_linkedin_kapil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_linkedin"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/dark_blue"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Shubham -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_shubham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFF3E0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/shubham_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="Shubham Agrawal's Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shubham_profile" />
+
+                    <TextView
+                        android:id="@+id/shubham_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shubham_agrawal"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/btn_linkedin_shubham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_linkedin"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/dark_blue"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Footer -->
+            <TextView
+                android:id="@+id/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2024_nmims_all_rights_reserved"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryDark">#018786</color>
+
+    <!-- Text colors -->
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#9E9D9D</color>
+
+    <!-- Background colors -->
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="light_background">#FFF3E0</color>
+    <color name="light_tint">#E0F7FA</color>
+    <color name="background">#A3B8D5</color>
+    <color name="cardBackground">#E4BBBB</color>
+
+    <!-- Other colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="saffron">#FF671F</color>
+
+    <!-- Background colors -->
+    <color name="backgroundDark">#121212</color>
+    <color name="rowEven">#FFFFFF</color>
+    <color name="rowOdd">#F5F5F5</color>
+    <color name="blue">#03A9F4</color>
+
+    <color name="light_blue">#BBDEFB</color>
+    <color name="dark_blue">#0D47A1</color>
+    <color name="gray">#757575</color>
+</resources>
